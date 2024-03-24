@@ -1,6 +1,8 @@
+
 <template>
+<h2>Yearly Installs</h2>
   <div class="chart-container">
-    <h2>Yearly Installs</h2>
+    
     <canvas ref="chartCanvas"></canvas>
   </div>
 </template>
@@ -54,7 +56,9 @@ export default {
           }]
         },
         options: {
-          maintainAspectRatio: false // Prevent the chart from maintaining aspect ratio
+          // Responsive option
+          responsive: true,
+          maintainAspectRatio: false
         }
       });
     }
@@ -65,12 +69,16 @@ export default {
 <style scoped>
 /* Add your component-specific styles here */
 .chart-container {
-  width: 400px; /* Set a fixed width for the chart */
-  height: 200px; /* Set a fixed height for the chart */
+  width: 100%; /* Set width to 100% to make it responsive */
+  max-width: 400px; /* Set a maximum width */
   margin: auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox to center vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
+
 canvas {
   width: 100%; /* Set canvas width to 100% */
-  height: 100%; /* Set canvas height to 100% */
+  height: auto; /* Set canvas height to auto for aspect ratio preservation */
 }
 </style>
