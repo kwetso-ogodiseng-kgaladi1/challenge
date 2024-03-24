@@ -1,15 +1,11 @@
 <template>
   <div>
-    <h1>Yearly Installs</h1>
-    <div v-if="installData.length > 0" class="bar-container">
-      <div v-for="(data, index) in installData" :key="index" class="bar">
-        <div class="bar-label">{{ data.year }}</div>
-        <div class="bar-fill">{{ data.numInstalls }}</div>
-      </div>
-    </div>
-    <div v-else>
-      Loading...
-    </div>
+    <h2>Yearly Installs</h2>
+    <ul>
+      <li v-for="install in installs" :key="install.year">
+        {{ install.year }}: {{ install.numInstalls }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -17,23 +13,19 @@
 export default {
   data() {
     return {
-      installData: []
+      installs: []
     };
   },
-  created() {
-    this.fetchData();
-  },
-  methods: {
-    fetchData() {
-      fetch('/src/assets/pieChart.json') 
-        .then(response => response.json())
-        .then(data => {
-          this.installData = data;
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-    }
+  mounted() {
+    // Fetch data from JSON file
+    fetch('/src/assets/pieChart.json')
+      .then(response => response.json())
+      .then(data => this.installs = data)
+      .catch(error => console.error('Error fetching data:', error));
   }
 };
 </script>
+
+<style scoped>
+/* Add your component-specific styles here */
+</style>
