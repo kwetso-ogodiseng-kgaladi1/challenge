@@ -1,0 +1,76 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, pre, code, address, var, dl, dt, dd, blockquote, form, fieldset, legend, input, textarea, th, td, figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make sure the content area is not obstructed by scrollbars */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Apply a base font family and size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Add some default styles for links */
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add some default styles for headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Add default styles for paragraphs */
+  p {
+    margin-bottom: 1em;
+  }
+  
+  /* Add default styles for lists */
+  ul, ol {
+    margin-bottom: 1em;
+  }
+  
+  /* Add default styles for list items */
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Add default styles for blockquotes */
+  blockquote {
+    margin: 0 0 1em;
+    padding: 0 0 0 1em;
+    border-left: 4px solid #ccc;
+  }
+  
+  /* Add default styles for form elements */
+  input, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* Add default styles for buttons */
+  button {
+    cursor: pointer;
+  }
+  
+  /* Add default styles for images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
