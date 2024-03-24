@@ -1,29 +1,43 @@
-# vue-project
+# My Vue Project for Sedibeng Technology coding challenge!
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a Vue.js project that provides functionality for managing employee data including filtering, searching, and pagination.
 
-## Recommended IDE Setup
+## Functionality
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The project includes the following functionality:
 
-## Customize configuration
+- Bargraph for monthly installs.
+- Pie chart for yearly installs.
+- Displaying a list of employees with their names, surnames, designations, and departments.
+- Filtering employees by designation using a dropdown menu.
+- Searching for employees by name, surname, designation, or department.
+- Pagination to handle large datasets effectively.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## How to Run
 
-```sh
-npm install
-```
+To run this project locally, follow these steps:
 
-### Compile and Hot-Reload for Development
+1. Clone this repository to your local machine:
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+2. Navigate to the project directory:
 
-```sh
-npm run build
-```
+
+3. Install the dependencies:
+
+
+4. Run the development server:
+
+
+5. Open your web browser and visit `http://localhost:8080` to view the application.
+
+## Technologies Used
+
+- Vue.js
+- fetch for HTTP requests
+- CSS for styling
+
+## Credits
+
+This project was created by Kwetso Kgaladi.
