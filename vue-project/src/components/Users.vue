@@ -1,6 +1,7 @@
 <template>
+<h2>Employee List</h2>
   <div class="employee-list">
-    <h2>Employee List</h2>
+    
     <div class="filter">
       <label for="designation">Filter by Designation:</label>
       <select v-model="selectedDesignation" id="designation" class="designation-select">
@@ -151,7 +152,7 @@ th, td {
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #b8860b; /* Replaced with goldish brown color */
   color: white;
   font-weight: bold;
 }
@@ -173,7 +174,7 @@ tbody tr:hover {
   padding: 8px 16px;
   margin: 0 5px;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: #b8860b; /* Replaced with goldish brown color */
   color: white;
   border: none;
   border-radius: 4px;
@@ -190,19 +191,19 @@ tbody tr:hover {
 }
 
 .prev-btn {
-  background-color: #f44336;
+  background-color: #b8860b; /* Replaced with goldish brown color */
 }
 
 .prev-btn:hover {
-  background-color: #d32f2f;
+  background-color: #333333;
 }
 
 .next-btn {
-  background-color: #2196F3;
+  background-color: #b8860b; /* Replaced with goldish brown color */
 }
 
 .next-btn:hover {
-  background-color: #1976D2;
+  background-color: #333333;
 }
 
 .pagination span {

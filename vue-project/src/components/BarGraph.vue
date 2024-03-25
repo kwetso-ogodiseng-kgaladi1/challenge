@@ -1,8 +1,9 @@
 <template>
+<h2>Monthly Installs</h2>
   <!-- Bar Graph Component -->
   <div class="bar-graph" ref="chartContainer">
     <!-- Title -->
-    <h2>Monthly Installs</h2>
+    
     <!-- Canvas for Chart -->
     <canvas ref="chartCanvas"></canvas>
   </div>
@@ -47,8 +48,8 @@ export default {
           datasets: [{
             label: 'Monthly Installs',
             data: this.installs.map(install => install.numInstalls),
-            backgroundColor: '#a51890', // Bar color
-            borderColor: 'rgba(54, 162, 235, 1)', // Border color
+            backgroundColor: '#78866B', // Bar color
+            borderColor: 'rgba(120, 134, 107, 0.5)', // Border color
             borderWidth: 1
           }]
         },
