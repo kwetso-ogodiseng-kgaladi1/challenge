@@ -1,4 +1,4 @@
-# My Vue Project for Sedibeng Technologies coding challenge!
+# My Vue Project for Sedibelo Technologies coding challenge!
 
 This is a Vue.js project that provides functionality for managing employee data including filtering, searching, and pagination.
 
