@@ -1,4 +1,4 @@
-# My Vue Project for Sedibeng Technology coding challenge!
+# My Vue Project for Sedibeng Technologies coding challenge!
 
 This is a Vue.js project that provides functionality for managing employee data including filtering, searching, and pagination.
 
@@ -24,10 +24,10 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
 
 
-3. Install the dependencies:
+3. Install the dependencies: "npm install / npm update"
 
 
-4. Run the development server:
+4. Run the development server: "npm run dev"
 
 
 5. Open your web browser and visit `http://localhost:8080` to view the application.
