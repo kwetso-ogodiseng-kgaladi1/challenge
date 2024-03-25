@@ -3,7 +3,7 @@
     <h2>Employee List</h2>
     <div class="filter">
       <label for="designation">Filter by Designation:</label>
-      <select v-model="selectedDesignation" id="designation">
+      <select v-model="selectedDesignation" id="designation" class="designation-select">
         <option value="">All Designations</option>
         <option v-for="designation in designations" :value="designation">{{ designation }}</option>
       </select>
@@ -113,6 +113,14 @@ export default {
 .filter label {
   font-weight: bold;
   margin-right: 10px;
+}
+
+.designation-select {
+  width: 100%; /* Make the dropdown full width */
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .search-input {
